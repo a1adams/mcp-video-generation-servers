@@ -1,0 +1,393 @@
+{
+  "keyword": "mcp server for ai video generation",
+  "title": "MCP servers for AI video generation: transport, auth, scopes and cost before a run",
+  "lastChecked": "2026-10-03",
+  "capabilityChecks": [
+    {
+      "key": "vendorHostedEndpoint",
+      "label": "Vendor-hosted endpoint"
+    },
+    {
+      "key": "oauthSignIn",
+      "label": "OAuth sign-in"
+    },
+    {
+      "key": "readRunWriteScopeSplit",
+      "label": "Read/run/write scope split"
+    },
+    {
+      "key": "costShownBeforeARun",
+      "label": "Cost shown before a run"
+    },
+    {
+      "key": "timelineOrSceneEditing",
+      "label": "Timeline or scene editing"
+    },
+    {
+      "key": "firstPartyServer",
+      "label": "First-party server"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": null,
+      "homepage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "docs": "https://www.wireflow.ai/docs/mcp",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Streamable HTTP, OAuth 2.1 with PKCE",
+      "restApi": null,
+      "modelSupport": "Image, video and audio models; list_models shows prices",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Streamable HTTP endpoint from the official connector docs. Add it as a custom connector, then approve the OAuth consent screen:",
+          "lang": "text",
+          "code": "https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": true,
+        "costShownBeforeARun": true,
+        "timelineOrSceneEditing": true,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Flora",
+      "tagline": null,
+      "homepage": "https://flora.ai",
+      "docs": "https://developer.flora.ai/mcp/",
+      "pricing": "https://flora.ai/pricing",
+      "claudeConnection": "Streamable HTTP, OAuth 2.1 with PKCE",
+      "restApi": null,
+      "modelSupport": "Video, image and audio generations and saved Techniques",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Server URL from the official Other clients page (transport http, OAuth 2.1 with PKCE):",
+          "lang": "text",
+          "code": "https://agents.flora.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": true,
+        "timelineOrSceneEditing": true,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 3,
+      "name": "Krea",
+      "tagline": null,
+      "homepage": "https://www.krea.ai",
+      "docs": "https://www.krea.ai/docs/developers/mcp",
+      "pricing": null,
+      "claudeConnection": "Streamable HTTP, OAuth or API token",
+      "restApi": null,
+      "modelSupport": "Krea image and video models, for example video/google/veo-3.1",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the official MCP page:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http krea-ai https://api.krea.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "fal",
+      "tagline": null,
+      "homepage": "https://fal.ai",
+      "docs": "https://fal.ai/docs/documentation/setting-up/mcp",
+      "pricing": "https://fal.ai/pricing",
+      "claudeConnection": "Streamable HTTP, API key header or OAuth connector",
+      "restApi": null,
+      "modelSupport": "Over 1,000 models including image-to-video and text-to-video",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the official Run MCP page. Replace YOUR_FAL_KEY with your fal API key:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http fal-ai \\\n  https://mcp.fal.ai/mcp \\\n  --header \"Authorization: Bearer YOUR_FAL_KEY\""
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": true,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 5,
+      "name": "Comfy Cloud",
+      "tagline": null,
+      "homepage": "https://comfy.org/cloud",
+      "docs": "https://docs.comfy.org/agent-tools/mcp",
+      "pricing": "https://comfy.org/pricing",
+      "claudeConnection": "Streamable HTTP (public beta), OAuth or API key",
+      "restApi": null,
+      "modelSupport": "ComfyUI video templates plus partner models such as Seedance",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the official Comfy MCP page, then run /mcp to authenticate:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http comfy-cloud https://cloud.comfy.org/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 6,
+      "name": "HeyGen",
+      "tagline": null,
+      "homepage": "https://www.heygen.com/model-context-protocol",
+      "docs": "https://developers.heygen.com/mcp/overview",
+      "pricing": "https://www.heygen.com/pricing",
+      "claudeConnection": "Remote server, OAuth",
+      "restApi": null,
+      "modelSupport": "Avatar III, IV and V engines, Video Agent and video translation",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Remote MCP server URL from the official overview. Add it as a custom connector and sign in with OAuth:",
+          "lang": "text",
+          "code": "https://mcp.heygen.com/mcp/v1/"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": true,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 7,
+      "name": "Magnific",
+      "tagline": null,
+      "homepage": "https://www.magnific.com/spaces",
+      "docs": "https://docs.magnific.com/modelcontextprotocol",
+      "pricing": "https://docs.magnific.com/pricing",
+      "claudeConnection": "Streamable HTTP, OAuth 2.0",
+      "restApi": null,
+      "modelSupport": "video_generate with the catalog from video_models_list",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the official Magnific MCP page:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http magnific https://mcp.magnific.com"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 8,
+      "name": "Replicate",
+      "tagline": null,
+      "homepage": "https://mcp.replicate.com",
+      "docs": "https://replicate.com/docs/reference/mcp",
+      "pricing": "https://replicate.com/pricing",
+      "claudeConnection": "Hosted SSE endpoint or local npm package, API token",
+      "restApi": null,
+      "modelSupport": "Any Replicate model, including the text-to-video collection",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from mcp.replicate.com, then run /mcp to authenticate:",
+          "lang": "bash",
+          "code": "claude mcp add replicate https://mcp.replicate.com/sse --transport sse --scope user"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": null,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 9,
+      "name": "Runway",
+      "tagline": null,
+      "homepage": "https://runway.com",
+      "docs": "https://github.com/runwayml/runway-api-mcp-server",
+      "pricing": "https://docs.dev.runwayml.com/guides/pricing/",
+      "claudeConnection": "Self-run: stdio or a self-deployed HTTP server, API key",
+      "restApi": null,
+      "modelSupport": "Runway API models; Seedance for video and Aleph for video editing by default",
+      "freeTier": "unverified",
+      "repo": "runwayml/runway-api-mcp-server",
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: follow the official authentication and request guide. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://github.com/runwayml/runway-api-mcp-server"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": null,
+        "oauthSignIn": false,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": 23,
+        "lastPush": "2026-09-30T20:47:09Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-03"
+      }
+    },
+    {
+      "n": 10,
+      "name": "MiniMax",
+      "tagline": null,
+      "homepage": "https://www.minimax.io",
+      "docs": "https://github.com/MiniMax-AI/MiniMax-MCP",
+      "pricing": null,
+      "claudeConnection": "Self-run: stdio or SSE, API key",
+      "restApi": null,
+      "modelSupport": "MiniMax-Hailuo-02 video, plus speech and image",
+      "freeTier": "unverified",
+      "repo": "MiniMax-AI/MiniMax-MCP",
+      "note": "Documentation review 2026-09-28; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup reference: follow the official authentication and request guide. This is a documentation URL, not an executed API example.",
+          "lang": "text",
+          "code": "https://github.com/MiniMax-AI/MiniMax-MCP"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": null,
+        "oauthSignIn": null,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": null,
+        "timelineOrSceneEditing": null,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": 1583,
+        "lastPush": "2026-08-20T12:06:49Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-03"
+      }
+    }
+  ]
+}
