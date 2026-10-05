@@ -5,7 +5,7 @@ A maintained dataset of **mcp server for ai video generation** options: what eac
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-03** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-05** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -52,7 +52,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Magnific](#7-magnific)** | Streamable HTTP, OAuth 2.0 | [check](https://docs.magnific.com/pricing) | video_generate with the catalog from video_models_list | [pricing](https://docs.magnific.com/pricing) | — |
 | **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | — |
 | **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 23 ★, pushed 2026-09-30 |
-| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | — | MiniMax-Hailuo-02 video, plus speech and image | — | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP) — 1,583 ★, pushed 2026-08-20 |
+| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | — | MiniMax-Hailuo-02 video, plus speech and image | — | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP) — 1,582 ★, pushed 2026-08-20 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
