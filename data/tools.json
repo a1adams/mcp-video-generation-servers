@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for ai video generation",
   "title": "MCP servers for AI video generation: transport, auth, scopes and cost before a run",
-  "lastChecked": "2026-10-05",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "vendorHostedEndpoint",
@@ -33,7 +33,7 @@
       "n": 1,
       "name": "Wireflow",
       "tagline": null,
-      "homepage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "homepage": "https://www.wireflow.ai",
       "docs": "https://www.wireflow.ai/docs/mcp",
       "pricing": "https://www.wireflow.ai/pricing",
       "claudeConnection": "Streamable HTTP, OAuth 2.1 with PKCE",
@@ -49,6 +49,8 @@
           "code": "https://www.wireflow.ai/api/mcp"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "moneyPageLabel": "Wireflow best MCP server for video editing tools in 2026 page",
       "capabilities": {
         "vendorHostedEndpoint": true,
         "oauthSignIn": true,
@@ -350,7 +352,7 @@
         "lastPush": "2026-09-30T20:47:09Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -382,11 +384,11 @@
         "firstPartyServer": true
       },
       "live": {
-        "stars": 1582,
+        "stars": 1583,
         "lastPush": "2026-08-20T12:06:49Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-11"
       }
     }
   ]

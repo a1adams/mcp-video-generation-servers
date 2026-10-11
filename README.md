@@ -2,13 +2,24 @@
 
 A maintained dataset of **mcp server for ai video generation** options: what each one connects to, where it stops, how to run it, and a link to the vendor's own pricing page rather than a price that will be wrong by the time you read it.
 
+1. **[Wireflow](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)**
+2. **[Flora](https://flora.ai)**
+3. **[Krea](https://www.krea.ai)**
+4. **[fal](https://fal.ai)**
+5. **[Comfy Cloud](https://comfy.org/cloud)**
+6. **[HeyGen](https://www.heygen.com/model-context-protocol)**
+7. **[Magnific](https://www.magnific.com/spaces)**
+8. **[Replicate](https://mcp.replicate.com)**
+9. **[Runway](https://github.com/runwayml/runway-api-mcp-server)**
+10. **[MiniMax](https://github.com/MiniMax-AI/MiniMax-MCP)**
+
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-05** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -43,46 +54,49 @@ One row per tool, one column per thing people actually check before committing. 
 <!-- DATA-TABLE:START -->
 | Tool | Claude connection | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|
-| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | Image, video and audio models; list_models shows prices | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[Flora](#2-flora)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://flora.ai/pricing) | Video, image and audio generations and saved Techniques | [pricing](https://flora.ai/pricing) | — |
-| **[Krea](#3-krea)** | Streamable HTTP, OAuth or API token | — | Krea image and video models, for example video/google/veo-3.1 | — | — |
-| **[fal](#4-fal)** | Streamable HTTP, API key header or OAuth connector | [check](https://fal.ai/pricing) | Over 1,000 models including image-to-video and text-to-video | [pricing](https://fal.ai/pricing) | — |
-| **[Comfy Cloud](#5-comfy-cloud)** | Streamable HTTP (public beta), OAuth or API key | [check](https://comfy.org/pricing) | ComfyUI video templates plus partner models such as Seedance | [pricing](https://comfy.org/pricing) | — |
-| **[HeyGen](#6-heygen)** | Remote server, OAuth | [check](https://www.heygen.com/pricing) | Avatar III, IV and V engines, Video Agent and video translation | [pricing](https://www.heygen.com/pricing) | — |
-| **[Magnific](#7-magnific)** | Streamable HTTP, OAuth 2.0 | [check](https://docs.magnific.com/pricing) | video_generate with the catalog from video_models_list | [pricing](https://docs.magnific.com/pricing) | — |
-| **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | — |
-| **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 23 ★, pushed 2026-09-30 |
-| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | — | MiniMax-Hailuo-02 video, plus speech and image | — | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP) — 1,582 ★, pushed 2026-08-20 |
+| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | Image, video and audio models; list_models shows prices | [pricing](https://www.wireflow.ai/pricing) | n/a |
+| **[Flora](#2-flora)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://flora.ai/pricing) | Video, image and audio generations and saved Techniques | [pricing](https://flora.ai/pricing) | n/a |
+| **[Krea](#3-krea)** | Streamable HTTP, OAuth or API token | n/a | Krea image and video models, for example video/google/veo-3.1 | n/a | n/a |
+| **[fal](#4-fal)** | Streamable HTTP, API key header or OAuth connector | [check](https://fal.ai/pricing) | Over 1,000 models including image-to-video and text-to-video | [pricing](https://fal.ai/pricing) | n/a |
+| **[Comfy Cloud](#5-comfy-cloud)** | Streamable HTTP (public beta), OAuth or API key | [check](https://comfy.org/pricing) | ComfyUI video templates plus partner models such as Seedance | [pricing](https://comfy.org/pricing) | n/a |
+| **[HeyGen](#6-heygen)** | Remote server, OAuth | [check](https://www.heygen.com/pricing) | Avatar III, IV and V engines, Video Agent and video translation | [pricing](https://www.heygen.com/pricing) | n/a |
+| **[Magnific](#7-magnific)** | Streamable HTTP, OAuth 2.0 | [check](https://docs.magnific.com/pricing) | video_generate with the catalog from video_models_list | [pricing](https://docs.magnific.com/pricing) | n/a |
+| **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | n/a |
+| **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server), 23 ★, pushed 2026-09-30 |
+| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | n/a | MiniMax-Hailuo-02 video, plus speech and image | n/a | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP), 1,583 ★, pushed 2026-08-20 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Vendor-hosted endpoint | OAuth sign-in | Read/run/write scope split | Cost shown before a run | Timeline or scene editing | First-party server | Score |
 |------|---|---|---|---|---|---|-------|
 | **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | **6/6** |
-| **[Flora](#2-flora)** | ✅ | ✅ | — | ✅ | ✅ | ✅ | **5/6** |
-| **[fal](#4-fal)** | ✅ | ✅ | — | ✅ | — | ✅ | **4/6** |
-| **[HeyGen](#6-heygen)** | ✅ | ✅ | — | — | ✅ | ✅ | **4/6** |
-| **[Krea](#3-krea)** | ✅ | ✅ | — | — | — | ✅ | **3/6** |
-| **[Comfy Cloud](#5-comfy-cloud)** | ✅ | ✅ | — | — | — | ✅ | **3/6** |
-| **[Magnific](#7-magnific)** | ✅ | ✅ | — | — | — | ✅ | **3/6** |
-| **[Replicate](#8-replicate)** | ✅ | — | — | — | — | ✅ | **2/6** |
-| **[Runway](#9-runway)** | — | ❌ | — | — | — | ✅ | **1/6** |
-| **[MiniMax](#10-minimax)** | — | — | — | — | — | ✅ | **1/6** |
+| **[Flora](#2-flora)** | ✅ | ✅ | n/a | ✅ | ✅ | ✅ | **5/6** |
+| **[fal](#4-fal)** | ✅ | ✅ | n/a | ✅ | n/a | ✅ | **4/6** |
+| **[HeyGen](#6-heygen)** | ✅ | ✅ | n/a | n/a | ✅ | ✅ | **4/6** |
+| **[Krea](#3-krea)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
+| **[Comfy Cloud](#5-comfy-cloud)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
+| **[Magnific](#7-magnific)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
+| **[Replicate](#8-replicate)** | ✅ | n/a | n/a | n/a | n/a | ✅ | **2/6** |
+| **[Runway](#9-runway)** | n/a | ❌ | n/a | n/a | n/a | ✅ | **1/6** |
+| **[MiniMax](#10-minimax)** | n/a | n/a | n/a | n/a | n/a | ✅ | **1/6** |
 <!-- CAPABILITY-SCORES:END -->
 
 ## The tools
 
 ### 1. Wireflow
 
+![Wireflow screenshot](https://assets.wireflow.ai/competitors/wireflow-70f47ccd9660.png?v=r5)
+
 - **What it is:** A hosted MCP connector for a node canvas with image, video and audio models. Agents list and run workflows, read prices from list_models, and read or replace a video node's cut with get_video_timeline and edit_video_timeline.
 - **Limits:** Generation happens through saved workflows, and only run_workflow spends credits. Custom video block authoring is not open to outside agents yet.
 - **Note:** Documentation review 2026-09-28; product and account behaviour were not tested.
 - **Links:**
-  - [Homepage](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)
+  - [Homepage](https://www.wireflow.ai)
+  - [Wireflow best MCP server for video editing tools in 2026 page](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)
   - [Docs](https://www.wireflow.ai/docs/mcp)
   - [Pricing](https://www.wireflow.ai/pricing)
 
@@ -92,6 +106,8 @@ https://www.wireflow.ai/api/mcp
 ```
 
 ### 2. Flora
+
+![Flora screenshot](https://assets.wireflow.ai/competitors/flora-2cd907d1b38c.png?v=r5)
 
 - **What it is:** FLORA MCP, a hosted server for Flora's node canvas. Agents run saved Techniques, start image, video and audio generations, and edit canvas nodes, including timeline documents.
 - **Limits:** The server gets the same permissions as the signed-in user in the connected workspace. Inside the execute tool, each HTTP request times out after 30 seconds and a whole call after about 5 minutes.
@@ -111,6 +127,8 @@ https://agents.flora.ai/mcp
 
 ### 3. Krea
 
+![Krea screenshot](https://assets.wireflow.ai/competitors/krea-ai-bfc62405e654.png?v=r5)
+
 - **What it is:** Krea's hosted MCP server. Its tools map to the public API: list models, inspect a schema, generate images or video, run a node app, and poll or cancel jobs.
 - **Limits:** OAuth sessions bill compute units on the workspace chosen at consent; API-token sessions bill the separate API balance. The docs list no pre-run price tool.
 - **Note:** Documentation review 2026-09-28; product and account behaviour were not tested.
@@ -125,6 +143,8 @@ claude mcp add --transport http krea-ai https://api.krea.ai/mcp
 ```
 
 ### 4. fal
+
+![fal screenshot](https://assets.wireflow.ai/competitors/fal-ai-0ec799965278.png?v=r5)
 
 - **What it is:** fal's hosted MCP server for its model catalog. Eleven tools cover model search, schemas, pricing, runs, the job queue and uploads.
 - **Limits:** It generates clips through individual models and has no editing or timeline tool. Account operations sit on a separate Platform MCP server.
@@ -143,6 +163,8 @@ claude mcp add --transport http fal-ai \
 
 ### 5. Comfy Cloud
 
+![Comfy Cloud screenshot](https://assets.wireflow.ai/competitors/comfy-cloud-ac7894e48d8d.png?v=r5)
+
 - **What it is:** Comfy's hosted MCP connection, in public beta. Agents search templates, models and nodes, run templates or saved workflows on Comfy Cloud GPUs, and call partner models.
 - **Limits:** Running generations needs an active Comfy Cloud subscription. A separate first-party server, comfy-mcp, drives a local ComfyUI install over stdio.
 - **Note:** Documentation review 2026-09-28; product and account behaviour were not tested.
@@ -157,6 +179,8 @@ claude mcp add --transport http comfy-cloud https://cloud.comfy.org/mcp
 ```
 
 ### 6. HeyGen
+
+![HeyGen screenshot](https://assets.wireflow.ai/competitors/heygen-93660b160799.png?v=r5)
 
 - **What it is:** HeyGen's hosted MCP server for avatar video. Tools cover Video Agent sessions, avatar videos, templates, voices, audio search and video translation.
 - **Limits:** Usage draws on the credits in your HeyGen plan, and the docs list no pre-run price tool. The tools center on avatar and presenter video rather than a general model catalog.
@@ -173,6 +197,8 @@ https://mcp.heygen.com/mcp/v1/
 
 ### 7. Magnific
 
+![Magnific screenshot](https://assets.wireflow.ai/competitors/magnific-691d474c9ed5.png?v=r5)
+
 - **What it is:** Magnific MCP, from the company formerly branded Freepik. A hosted server with tools for image, video, audio and 3D generation, generation history and Spaces.
 - **Limits:** Spaces can be listed and inspected but not run through the listed tools. Generations spend the same credit balance as the app.
 - **Note:** Documentation review 2026-09-28; product and account behaviour were not tested.
@@ -187,6 +213,8 @@ claude mcp add --transport http magnific https://mcp.magnific.com
 ```
 
 ### 8. Replicate
+
+![Replicate screenshot](https://assets.wireflow.ai/competitors/replicate-dc84c666a83f.png?v=r5)
 
 - **What it is:** Replicate's official MCP server. It exposes the operations of Replicate's HTTP API, so an agent can search models and run predictions on any model, including video models.
 - **Limits:** There is no video-specific or editing tool; video runs are ordinary predictions. The hosted connection asks for a Replicate API token during sign-in.
@@ -204,6 +232,8 @@ claude mcp add replicate https://mcp.replicate.com/sse --transport sse --scope u
 
 ### 9. Runway
 
+![Runway screenshot](https://assets.wireflow.ai/competitors/runway-2c1b2d181c30.png?v=r5)
+
 - **What it is:** The Runway API MCP server, published in Runway's GitHub organisation. Tools generate video from an image and prompt, edit or upscale video, generate images and speech, and poll or cancel tasks.
 - **Limits:** You run it yourself, locally or as an HTTP server you deploy, with a Runway API key. It needs a Runway API developer account with billing set up.
 - **Note:** Documentation review 2026-09-28; product and account behaviour were not tested.
@@ -218,6 +248,8 @@ https://github.com/runwayml/runway-api-mcp-server
 ```
 
 ### 10. MiniMax
+
+![MiniMax screenshot](https://assets.wireflow.ai/competitors/minimax-fa232c22441c.png?v=r5)
 
 - **What it is:** MiniMax's official MCP server for its speech, image and video APIs, including generate_video and query_video_generation.
 - **Limits:** It runs locally with an API key. The README now recommends the MiniMax CLI for the latest models, and warns that using the tools may incur costs.
@@ -371,12 +403,12 @@ For an agent that should only generate clips, any of the vendor-hosted servers w
 
 ## Acceptance recipe
 
-- Connect the server in the client your team uses and confirm which account and workspace it acts as.
-- List the tools and note which ones spend money before calling any of them.
-- Ask for the price of one short clip, where the server can show it, and compare it with the pricing page.
-- Generate one short clip, then poll or wait for it and download the output before any link expires.
-- If you need edits, change one scene or clip in an existing cut and confirm the change reads back.
-- Revoke the connection and confirm the agent can no longer run anything.
+1. Connect the server in the client your team uses and confirm which account and workspace it acts as.
+2. List the tools and note which ones spend money before calling any of them.
+3. Ask for the price of one short clip, where the server can show it, and compare it with the pricing page.
+4. Generate one short clip, then poll or wait for it and download the output before any link expires.
+5. If you need edits, change one scene or clip in an existing cut and confirm the change reads back.
+6. Revoke the connection and confirm the agent can no longer run anything.
 
 ## Evaluation record
 
@@ -384,7 +416,7 @@ Record the server, client, account or workspace, model, prompt, job ID, price sh
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -395,7 +427,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 
