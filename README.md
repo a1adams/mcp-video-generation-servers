@@ -12,6 +12,7 @@ A maintained dataset of **mcp server for ai video generation** options: what eac
 8. **[Replicate](https://mcp.replicate.com)**
 9. **[Runway](https://github.com/runwayml/runway-api-mcp-server)**
 10. **[MiniMax](https://github.com/MiniMax-AI/MiniMax-MCP)**
+11. **[TalkPix](https://www.talkpix.ai/developers#mcp)**
 
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
@@ -36,6 +37,7 @@ Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, se
   - [Replicate](#8-replicate)
   - [Runway](#9-runway)
   - [MiniMax](#10-minimax)
+  - [TalkPix](#11-talkpix)
 - [Decision this list supports](#decision-this-list-supports)
 - [Scope and evidence](#scope-and-evidence)
 - [What each column means](#what-each-column-means)
@@ -52,18 +54,19 @@ Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, se
 One row per tool, one column per thing people actually check before committing. Columns with nothing verified behind them are dropped rather than filled with guesses.
 
 <!-- DATA-TABLE:START -->
-| Tool | Claude connection | Free tier | Model support | Pricing | Open-source SDK / MCP |
-|---|---|---|---|---|---|
-| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | Image, video and audio models; list_models shows prices | [pricing](https://www.wireflow.ai/pricing) | n/a |
-| **[Flora](#2-flora)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://flora.ai/pricing) | Video, image and audio generations and saved Techniques | [pricing](https://flora.ai/pricing) | n/a |
-| **[Krea](#3-krea)** | Streamable HTTP, OAuth or API token | n/a | Krea image and video models, for example video/google/veo-3.1 | n/a | n/a |
-| **[fal](#4-fal)** | Streamable HTTP, API key header or OAuth connector | [check](https://fal.ai/pricing) | Over 1,000 models including image-to-video and text-to-video | [pricing](https://fal.ai/pricing) | n/a |
-| **[Comfy Cloud](#5-comfy-cloud)** | Streamable HTTP (public beta), OAuth or API key | [check](https://comfy.org/pricing) | ComfyUI video templates plus partner models such as Seedance | [pricing](https://comfy.org/pricing) | n/a |
-| **[HeyGen](#6-heygen)** | Remote server, OAuth | [check](https://www.heygen.com/pricing) | Avatar III, IV and V engines, Video Agent and video translation | [pricing](https://www.heygen.com/pricing) | n/a |
-| **[Magnific](#7-magnific)** | Streamable HTTP, OAuth 2.0 | [check](https://docs.magnific.com/pricing) | video_generate with the catalog from video_models_list | [pricing](https://docs.magnific.com/pricing) | n/a |
-| **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | n/a |
-| **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server), 23 ★, pushed 2026-09-30 |
-| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | n/a | MiniMax-Hailuo-02 video, plus speech and image | n/a | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP), 1,603 ★, pushed 2026-11-10 |
+| Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
+|---|---|---|---|---|---|---|
+| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | n/a | [check](https://www.wireflow.ai/pricing) | Image, video and audio models; list_models shows prices | [pricing](https://www.wireflow.ai/pricing) | n/a |
+| **[Flora](#2-flora)** | Streamable HTTP, OAuth 2.1 with PKCE | n/a | [check](https://flora.ai/pricing) | Video, image and audio generations and saved Techniques | [pricing](https://flora.ai/pricing) | n/a |
+| **[Krea](#3-krea)** | Streamable HTTP, OAuth or API token | n/a | n/a | Krea image and video models, for example video/google/veo-3.1 | n/a | n/a |
+| **[fal](#4-fal)** | Streamable HTTP, API key header or OAuth connector | n/a | [check](https://fal.ai/pricing) | Over 1,000 models including image-to-video and text-to-video | [pricing](https://fal.ai/pricing) | n/a |
+| **[Comfy Cloud](#5-comfy-cloud)** | Streamable HTTP (public beta), OAuth or API key | n/a | [check](https://comfy.org/pricing) | ComfyUI video templates plus partner models such as Seedance | [pricing](https://comfy.org/pricing) | n/a |
+| **[HeyGen](#6-heygen)** | Remote server, OAuth | n/a | [check](https://www.heygen.com/pricing) | Avatar III, IV and V engines, Video Agent and video translation | [pricing](https://www.heygen.com/pricing) | n/a |
+| **[Magnific](#7-magnific)** | Streamable HTTP, OAuth 2.0 | n/a | [check](https://docs.magnific.com/pricing) | video_generate with the catalog from video_models_list | [pricing](https://docs.magnific.com/pricing) | n/a |
+| **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | n/a | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | n/a |
+| **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | n/a | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server), 23 ★, pushed 2026-09-30 |
+| **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | n/a | n/a | MiniMax-Hailuo-02 video, plus speech and image | n/a | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP), 1,603 ★, pushed 2026-11-10 |
+| **[TalkPix](#11-talkpix)** | Vendor-hosted Streamable HTTP, OAuth 2.1 in Claude and ChatGPT | Yes | No | Talking photos from a portrait and script, presenter-led ads, and text-to-video or image-to-video | [pricing](https://www.talkpix.ai/pricing) | n/a |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -77,6 +80,7 @@ The score counts the documented capabilities a tool has, out of the checks liste
 | **[Flora](#2-flora)** | ✅ | ✅ | n/a | ✅ | ✅ | ✅ | **5/6** |
 | **[fal](#4-fal)** | ✅ | ✅ | n/a | ✅ | n/a | ✅ | **4/6** |
 | **[HeyGen](#6-heygen)** | ✅ | ✅ | n/a | n/a | ✅ | ✅ | **4/6** |
+| **[TalkPix](#11-talkpix)** | ✅ | ✅ | n/a | ✅ | ❌ | ✅ | **4/6** |
 | **[Krea](#3-krea)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
 | **[Comfy Cloud](#5-comfy-cloud)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
 | **[Magnific](#7-magnific)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
@@ -263,6 +267,18 @@ Setup reference: follow the official authentication and request guide. This is a
 https://github.com/MiniMax-AI/MiniMax-MCP
 ```
 
+### 11. TalkPix
+
+- **What it is** TalkPix's hosted MCP generates lip-synced MP4s from a portrait and script, presenter-led product ads from a photo and brief, and short clips from a prompt or image. It quotes the credit cost before a render starts.
+- **Limits** OAuth sign-in is available in the Claude and ChatGPT custom connectors. Renders use prepaid TalkPix credits. The server does not expose timeline editing.
+- **Links** [MCP docs](https://www.talkpix.ai/developers#mcp) · [Claude setup](https://www.talkpix.ai/claude) · [ChatGPT setup and demo](https://www.talkpix.ai/chatgpt) · [Pricing](https://www.talkpix.ai/pricing)
+
+Add the endpoint in Claude or ChatGPT as a custom connector, then sign in with OAuth.
+
+```text
+https://www.talkpix.ai/api/mcp
+```
+
 ## Decision this list supports
 
 You want an agent in Claude, Cursor, Codex or another MCP client to generate or edit video. This list compares the MCP servers that do it on the details that decide setup and risk: where the server runs, how it signs in, whether permissions are split, whether you see a price before you spend, and whether the agent can edit a cut rather than only generate clips.
@@ -399,7 +415,7 @@ The weekly repository job refreshes GitHub metadata. It does not re-check vendor
 
 ## Selection notes
 
-For an agent that should only generate clips, any of the vendor-hosted servers works without a local install, and fal, Flora and Wireflow also show a price before the run. For an agent that assembles or revises a cut, only Wireflow, Flora and HeyGen document tools that read and change the structure of a video. Wireflow is the only server here that documents separate read, run and write scopes. Runway and MiniMax publish servers you run yourself with an API key, which suits a controlled machine more than a shared chat client.
+For an agent that should only generate clips, any of the vendor-hosted servers works without a local install, and fal, Flora, TalkPix and Wireflow also show a price before the run. For an agent that assembles or revises a cut, only Wireflow, Flora and HeyGen document tools that read and change the structure of a video. Wireflow is the only server here that documents separate read, run and write scopes. Runway and MiniMax publish servers you run yourself with an API key, which suits a controlled machine more than a shared chat client.
 
 ## Acceptance recipe
 
