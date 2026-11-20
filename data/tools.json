@@ -390,6 +390,42 @@
         "latestReleaseDate": null,
         "checkedAt": "2026-11-16"
       }
+    },
+    {
+      "n": 11,
+      "name": "TalkPix",
+      "tagline": "Talking-photo MP4s, presenter-led product ads and short AI video clips",
+      "homepage": "https://www.talkpix.ai",
+      "docs": "https://www.talkpix.ai/developers#mcp",
+      "pricing": "https://www.talkpix.ai/pricing",
+      "claudeConnection": "Vendor-hosted Streamable HTTP, OAuth 2.1 in Claude and ChatGPT",
+      "restApi": true,
+      "modelSupport": "Talking photos from a portrait and script, presenter-led ads, and text-to-video or image-to-video",
+      "freeTier": "no",
+      "repo": null,
+      "note": "OAuth sign-in is limited to the Claude and ChatGPT custom connectors. Rendering uses prepaid TalkPix credits, and the server generates clips without timeline editing.",
+      "quickstart": [
+        {
+          "label": "In Claude or ChatGPT, add this address as a custom connector and complete OAuth sign-in:",
+          "lang": "text",
+          "code": "https://www.talkpix.ai/api/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": null,
+        "costShownBeforeARun": true,
+        "timelineOrSceneEditing": false,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
     }
   ]
 }
