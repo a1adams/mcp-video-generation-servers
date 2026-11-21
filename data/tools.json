@@ -390,6 +390,42 @@
         "latestReleaseDate": null,
         "checkedAt": "2026-11-16"
       }
+    },
+    {
+      "n": 11,
+      "name": "eroq",
+      "tagline": null,
+      "homepage": "https://eroq.ai",
+      "docs": "https://eroq.ai/mcp",
+      "pricing": "https://eroq.ai/pricing",
+      "claudeConnection": "Streamable HTTP, OAuth sign-in or API key header",
+      "restApi": "https://eroq.ai/docs",
+      "modelSupport": "Seedance, Kling, Veo and eroq's own video engines, plus image, speech and music; list_models shows prices",
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Entry added by the vendor on 2026-11-21 from its own documentation.",
+      "quickstart": [
+        {
+          "label": "Claude Code command from the official MCP page. Then run /mcp, pick eroq and Authenticate in the browser (or add --header \"Authorization: Bearer YOUR_EROQ_KEY\"):",
+          "lang": "bash",
+          "code": "claude mcp add --transport http eroq https://eroq.ai/mcp"
+        }
+      ],
+      "capabilities": {
+        "vendorHostedEndpoint": true,
+        "oauthSignIn": true,
+        "readRunWriteScopeSplit": false,
+        "costShownBeforeARun": true,
+        "timelineOrSceneEditing": false,
+        "firstPartyServer": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
     }
   ]
 }
