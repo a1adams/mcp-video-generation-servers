@@ -12,6 +12,7 @@ A maintained dataset of **mcp server for ai video generation** options: what eac
 8. **[Replicate](https://mcp.replicate.com)**
 9. **[Runway](https://github.com/runwayml/runway-api-mcp-server)**
 10. **[MiniMax](https://github.com/MiniMax-AI/MiniMax-MCP)**
+11. **[eroq](https://eroq.ai/mcp)**
 
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
@@ -36,6 +37,7 @@ Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, se
   - [Replicate](#8-replicate)
   - [Runway](#9-runway)
   - [MiniMax](#10-minimax)
+  - [eroq](#11-eroq)
 - [Decision this list supports](#decision-this-list-supports)
 - [Scope and evidence](#scope-and-evidence)
 - [What each column means](#what-each-column-means)
@@ -64,6 +66,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Replicate](#8-replicate)** | Hosted SSE endpoint or local npm package, API token | [check](https://replicate.com/pricing) | Any Replicate model, including the text-to-video collection | [pricing](https://replicate.com/pricing) | n/a |
 | **[Runway](#9-runway)** | Self-run: stdio or a self-deployed HTTP server, API key | [check](https://docs.dev.runwayml.com/guides/pricing/) | Runway API models; Seedance for video and Aleph for video editing by default | [pricing](https://docs.dev.runwayml.com/guides/pricing/) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server), 23 ★, pushed 2026-09-30 |
 | **[MiniMax](#10-minimax)** | Self-run: stdio or SSE, API key | n/a | MiniMax-Hailuo-02 video, plus speech and image | n/a | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP), 1,603 ★, pushed 2026-11-10 |
+| **[eroq](#11-eroq)** | Streamable HTTP, OAuth sign-in or API key header | [check](https://eroq.ai/pricing) | Seedance, Kling, Veo and eroq's own video engines, plus image, speech and music; list_models shows prices | [pricing](https://eroq.ai/pricing) | n/a |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -77,6 +80,7 @@ The score counts the documented capabilities a tool has, out of the checks liste
 | **[Flora](#2-flora)** | ✅ | ✅ | n/a | ✅ | ✅ | ✅ | **5/6** |
 | **[fal](#4-fal)** | ✅ | ✅ | n/a | ✅ | n/a | ✅ | **4/6** |
 | **[HeyGen](#6-heygen)** | ✅ | ✅ | n/a | n/a | ✅ | ✅ | **4/6** |
+| **[eroq](#11-eroq)** | ✅ | ✅ | ❌ | ✅ | ❌ | ✅ | **4/6** |
 | **[Krea](#3-krea)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
 | **[Comfy Cloud](#5-comfy-cloud)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
 | **[Magnific](#7-magnific)** | ✅ | ✅ | n/a | n/a | n/a | ✅ | **3/6** |
@@ -261,6 +265,21 @@ https://github.com/runwayml/runway-api-mcp-server
 Setup reference: follow the official authentication and request guide. This is a documentation URL, not an executed API example.
 ```text
 https://github.com/MiniMax-AI/MiniMax-MCP
+```
+
+### 11. eroq
+
+- **What it is:** eroq's hosted MCP server at https://eroq.ai/mcp, a thin client of its public REST API. Tools generate images, video (Seedance, Kling and Veo next to eroq's own engines), speech and music, poll the jobs, list models with their credit prices, read the balance, and create or run Flows, its scheduled pipelines.
+- **Limits:** One OAuth scope, so no read/run/write split. Video-to-video work (Replace, the Cinema scene planner) is not exposed as tools. make_edit returns a studio link that lays a beat-cut edit out on the studio timeline; the agent does not edit the cut itself. Every generation spends prepaid credits.
+- **Note:** Entry added by the vendor on 2026-11-21 from its own documentation.
+- **Links:**
+  - [Homepage](https://eroq.ai)
+  - [Docs](https://eroq.ai/mcp)
+  - [Pricing](https://eroq.ai/pricing)
+
+Claude Code command from the official MCP page. Then run /mcp, pick eroq and Authenticate in the browser (or add `--header "Authorization: Bearer YOUR_EROQ_KEY"`):
+```bash
+claude mcp add --transport http eroq https://eroq.ai/mcp
 ```
 
 ## Decision this list supports
