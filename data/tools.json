@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for ai video generation",
   "title": "MCP servers for AI video generation: transport, auth, scopes and cost before a run",
-  "lastChecked": "2026-11-16",
+  "lastChecked": "2026-11-23",
   "capabilityChecks": [
     {
       "key": "vendorHostedEndpoint",
@@ -352,7 +352,7 @@
         "lastPush": "2026-09-30T20:47:09Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-16"
+        "checkedAt": "2026-11-23"
       }
     },
     {
@@ -384,11 +384,11 @@
         "firstPartyServer": true
       },
       "live": {
-        "stars": 1603,
+        "stars": 1613,
         "lastPush": "2026-11-10T09:49:32Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-16"
+        "checkedAt": "2026-11-23"
       }
     }
   ]
